@@ -34,7 +34,7 @@ The **SO-101** is a 6-DOF desktop robot arm built around the Feetech STS3215 ser
 |:------------------|:------------------------|:------------------------|
 | Controller Board  | Feetech serial board    | Feetech serial board    |
 | USB Port          | `/dev/ttyACM1`          | `/dev/ttyACM0`          |
-| Power Supply      | 5 V external PSU        | 5 V external PSU        |
+| Power Supply      | 5 V external PSU        | 12 V external PSU        |
 | Motors            | 6 × Feetech STS3215     | 6 × Feetech STS3215     |
 
 > **Note:** Your actual ports (`/dev/ttyACM0`, `/dev/ttyACM1`) may differ.
@@ -65,12 +65,12 @@ The follower arm uses the **C018** variant across all 6 joints. This variant sha
 
 | Joint # | Motor Name    | Model           | Gear Ratio | Stall Torque | Operating Voltage | Encoder   |
 |:-------:|:--------------|:----------------|:----------:|:------------:|:-----------------:|:---------:|
-| 1       | shoulder_pan  | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
-| 2       | shoulder_lift | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
-| 3       | elbow_flex    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
-| 4       | wrist_flex    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
-| 5       | wrist_roll    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
-| 6       | gripper       | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 5 V               | 12-bit    |
+| 1       | shoulder_pan  | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
+| 2       | shoulder_lift | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
+| 3       | elbow_flex    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
+| 4       | wrist_flex    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
+| 5       | wrist_roll    | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
+| 6       | gripper       | STS3215-**C018** | 1 : 345   | ~30 kg·cm    | 12 V               | 12-bit    |
 
 > **Common specs across all variants:** TTL serial bus (half-duplex), 1 Mbps baud rate, 4096 steps/360° resolution, metal gears (backlash ≤ 0.5°), dimensions 45.2 × 24.7 × 35 mm, weight ~55 g.
 
